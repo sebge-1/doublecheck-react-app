@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom' 
+import NavBar from './Components/NavBar.js'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <BrowserRouter>
+          <NavBar />
+        </BrowserRouter>
         <header className="App-header">
           <h1>
             Welcome to DoubleCheck!
