@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,18 +6,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1>
+            Welcome to DoubleCheck!
+          </h1>
+          <hr/>
+          <h4>
+            Are you communicating the right message?
+          </h4>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Paste your texts and tweets into DoubleCheck to find out.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
