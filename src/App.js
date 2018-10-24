@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom'
 import NavBar from './Components/NavBar.js'
+import { FaCheckDouble } from 'react-icons/fa'
+import { Button } from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +14,8 @@ class App extends Component {
         </BrowserRouter>
           <header className="App-header">
             <h1>
-              Welcome to DoubleCheck!
+              Welcome to DoubleCheck!<br/>
+              <FaCheckDouble />
             </h1>
             <hr/>
             <h4>
@@ -23,9 +26,9 @@ class App extends Component {
             </p>
             <BrowserRouter>
               <Link to="/projects/new">
-                <button type="button">
+                <Button>
                   Get Started
-                </button>
+                </Button>
               </Link>
           </BrowserRouter>
         </header>

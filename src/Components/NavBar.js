@@ -12,15 +12,15 @@ const NavBar = props => {
       </NavLink>
       <NavLink
         style={{ marginRight: '10px' }}
-        to="/projects"
+        to="/projects/new"
       >
-        My Projects
+        Start a new project
       </NavLink>
       <NavLink
         style={{ marginRight: '10px' }}
-        to="/logout"
+        to="/projects"
       >
-        Logout
+        My Projects
       </NavLink>
     </div>
   );
