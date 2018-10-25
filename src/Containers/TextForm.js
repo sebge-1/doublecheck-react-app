@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addProject } from '../Actions/index.js';
+import { toneAnalyzer } from '../tone.js';
 
 class TextForm extends Component {
 
@@ -16,6 +17,7 @@ class TextForm extends Component {
     event.preventDefault();
     const { addProject, history } = this.props;
     addProject(this.state);
+    toneAnalyzer(this.state.text)
     history.push('/result')
   }
 
@@ -38,4 +40,11 @@ class TextForm extends Component {
   }
 }
 
-export default connect(null, { addProject })(TextForm)
+const mapDispatchToProps = dispatch => {
+  return {
+    addProject: (project) => dispatch(addProject(project))
+  };
+};
+
+
+export default connect(null, mapDispatchToProps)(TextForm)
