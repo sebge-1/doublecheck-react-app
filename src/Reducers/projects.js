@@ -1,3 +1,8 @@
 export default (state = [], action) => {
-  return state;
+  switch (action.type) {
+    case 'ADD_PROJECT':
+      return [ ...state, action.project ];
+    default: // need this for default case
+      return state;
+    }
 }
