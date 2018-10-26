@@ -14,7 +14,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/projects' component={Projects} />
-          <Route exact path='/result' component={Result} />
+          <Route path='/projects/:projectId/result' component={Result} />
           <Route exact path='/projects/new' component={TextForm}/>
         </Switch>
       </Router>
