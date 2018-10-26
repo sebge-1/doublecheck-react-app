@@ -9,16 +9,30 @@ class TextForm extends Component {
     super();
 
     this.state = {
-      text: ''
+      text: '',
+      result: ''
     };
+  }
+
+  updateProject(result) {
+    this.setState({result: result});
+    return new Promise(
+      (resolve,reject) => {
+      resolve(this.state)
+    })
+  }
+
+  async redirect(project) {
+    // wait until project is updated and added to Redux store before redirecting
+    let action = await toneAnalyzer(project).then(result => this.updateProject(result)).then(project => this.props.addProject(project))
+    console.log(action.project.result)
+    this.props.history.push(`/projects/${action.project.id}/result`)
   }
 
   handleOnSubmit = event => {
     event.preventDefault();
     const { addProject, history } = this.props;
-    addProject(this.state);
-    toneAnalyzer(this.state.text)
-    history.push('/result')
+    this.redirect(this.state)
   }
 
   handleOnChange = event => {
@@ -40,6 +54,13 @@ class TextForm extends Component {
   }
 }
 
+
+const mapStateToProps = (state) => {
+  return {
+    projects: state.projects
+  };
+}
+
 const mapDispatchToProps = dispatch => {
   return {
     addProject: (project) => dispatch(addProject(project))
@@ -47,4 +68,4 @@ const mapDispatchToProps = dispatch => {
 };
 
 
-export default connect(null, mapDispatchToProps)(TextForm)
+export default connect(mapStateToProps, mapDispatchToProps)(TextForm)
