@@ -7,3 +7,11 @@ export function addProject(project) {
     project
   };
 }
+
+export function fetchProjects() {
+  return (dispatch) => {
+    return fetch('/projects')
+      .then(response => response.json())
+      .then(projects => dispatch({type: "FETCH_PROJECTS", payload: projects}))
+    }
+}
