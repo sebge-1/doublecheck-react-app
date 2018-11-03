@@ -1,3 +1,4 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :id, :text, :result
+  attributes :id
+  has_one :document
 end
