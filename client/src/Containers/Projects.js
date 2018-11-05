@@ -30,10 +30,42 @@ export default class Projects extends Component {
   }
 
   render() {
+    let projectsHTML = this.props.projects.map(project =>
+      <li>
+        <p>Passage: {project.document.text}</p>
+        <h4>Summary</h4>
+        <ol>
+          {project.document.document_tones.map(tone =>
+            <li>
+              <em>{tone.tone_name}</em>
+              <p> Score: {tone.score}</p>
+            </li>)}
+        </ol>
 
+      <h4>Detailed Analysis</h4>
+      <ul>
+        {project.document.sentences.map(
+          sentence =>
+          <li>
+            <em>Sentence {project.document.sentences.indexOf(sentence) + 1}: {sentence.text}</em>
+            <ol>{sentence.sentence_tones.map(tone =>
+              <li>
+                <em>{tone.tone_name}</em>
+                <p> Score: {tone.score}</p>
+              </li>
+            )}
+          </ol>
+        </li>
+        )}
+      </ul>
+    </li>
+    )
     return (
       <div>
         <h1>{this.state.loadMessage}</h1>
+        <ol>
+          {projectsHTML}
+        </ol>
       </div>
     )
   }
