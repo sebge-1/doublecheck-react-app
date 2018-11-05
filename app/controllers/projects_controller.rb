@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
   def index
-    render json: Project.all
+    Project.all.each do |project|
+      render json: project, include:['document', 'document.document_tones', 'document.sentences', 'document.sentences.sentence_tones']
+    end
   end
 
   def create
