@@ -1,7 +1,7 @@
 let counter = 0;
 
 export function addProject(project) {
-  project.id = ++counter;
+  project.idx = ++counter;
   return {
     type: 'ADD_PROJECT',
     project
