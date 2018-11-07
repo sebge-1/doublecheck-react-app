@@ -9,13 +9,19 @@ class TextForm extends Component {
     super();
 
     this.state = {
-      text: '',
-      result: ''
-    };
-  }
+        text: "",
+        sentences: [],
+        tones: []
+      }
+    }
 
   updateProject(result) {
-    this.setState({result: result});
+    this.setState(
+      Object.assign({}, {text: this.state.text}, {
+        tones: result.document_tone.tones,
+        sentences: result.sentences_tone
+      })
+    );
     return new Promise(
       (resolve,reject) => {
       resolve(this.state)
@@ -25,7 +31,6 @@ class TextForm extends Component {
   async redirect(project) {
     // wait until project is updated and added to Redux store before redirecting
     let action = await toneAnalyzer(project).then(result => this.updateProject(result)).then(project => this.props.addProject(project))
-    console.log(action.project.result)
     this.props.history.push(`/projects/${action.project.idx}/result`)
     console.log(project)
   }
