@@ -32,10 +32,10 @@ export default class Projects extends Component {
   render() {
     let projectsHTML = this.props.projects.map(project =>
       <li>
-        <p>Passage: {project.document.text}</p>
+        <p>Passage: {project.text}</p>
         <h4>Summary</h4>
         <ol>
-          {project.document.document_tones.map(tone =>
+          {project.tones.map(tone =>
             <li>
               <em>{tone.tone_name}</em>
               <p> Score: {tone.score}</p>
@@ -44,11 +44,11 @@ export default class Projects extends Component {
 
       <h4>Detailed Analysis</h4>
       <ul>
-        {project.document.sentences.map(
+        {project.sentences.map(
           sentence =>
           <li>
-            <em>Sentence {project.document.sentences.indexOf(sentence) + 1}: {sentence.text}</em>
-            <ol>{sentence.sentence_tones.map(tone =>
+            <em>Sentence {project.sentences.indexOf(sentence) + 1}: {sentence.text}</em>
+            <ol>{sentence.tones.map(tone =>
               <li>
                 <em>{tone.tone_name}</em>
                 <p> Score: {tone.score}</p>
