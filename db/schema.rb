@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_31_230919) do
+ActiveRecord::Schema.define(version: 2018_11_06_182028) do
 
   create_table "projects", force: :cascade do |t|
     t.string "text"
-    t.string "result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "sentences", force: :cascade do |t|
+    t.string "text"
+    t.integer "project_id"
+  end
+
+  create_table "tones", force: :cascade do |t|
+    t.float "score"
+    t.string "tone_name"
+    t.integer "analyzable_id"
+    t.string "analyzable_type"
   end
 
 end
