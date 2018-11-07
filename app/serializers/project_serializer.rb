@@ -1,4 +1,5 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :document
+  attributes :id, :text
+  has_many :tones, as: :analyzable
+  has_many :sentences
 end
