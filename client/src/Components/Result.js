@@ -1,10 +1,13 @@
 import React, { Component }  from 'react';
 import {Link} from 'react-router-dom';
+import Emoji from './Emoji.js'
+import { symbolMap } from '../emojis.js';
 
 import { connect } from 'react-redux';
 
 class Result extends Component {
   saveProject = () => {
+    console.log(this.props.project)
     const { history } = this.props;
     fetch('/api/save', {
       method: 'POST', // or 'PUT'
@@ -19,7 +22,7 @@ class Result extends Component {
     // (res => res.json())
     // .then(response => console.log('Success:', JSON.stringify(response)))
     // .catch(error => console.error('Error:', error));
-  })
+    })
   }
 
   render() {
@@ -33,6 +36,7 @@ class Result extends Component {
         {this.props.project.tones.map(tone =>
           <li>
             <em>{tone.tone_name}</em>
+            <Emoji symbol={symbolMap(tone)} label={tone.tone_name}/>
             <p> Score: {tone.score}</p>
           </li>)}
       </ol>
@@ -47,6 +51,7 @@ class Result extends Component {
             <ol>{sentence.tones.map(tone =>
               <li>
                 <em>{tone.tone_name}</em>
+                <Emoji symbol={symbolMap(tone)}/>
                 <p>Score: {tone.score}</p>
               </li>
             )}
