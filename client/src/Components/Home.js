@@ -21,11 +21,7 @@ const Home = props => (
           Paste your texts and tweets into DoubleCheck to find out.
         </p>
         {props.buttonVisible &&
-          <Link to="/projects/new">
-            <Button>
-            Get Started
-          </Button>
-        </Link>
+          <SubmitButton/>
         }
         {!props.buttonVisible && <TextForm/>}
       </header>
