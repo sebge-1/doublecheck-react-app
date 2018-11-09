@@ -9,9 +9,10 @@ const Home = props => (
     <div className="App">
       <header className="App-header">
         <h1>
-          Welcome to DoubleCheck!</h1>
-          <br/>
-          <FaCheckDouble />
+          Welcome to DoubleCheck!
+        </h1>
+        <br/>
+        <FaCheckDouble />
         <hr/>
         <h4>
           Are you sending the right message?
@@ -21,12 +22,12 @@ const Home = props => (
         </p>
         {props.buttonVisible &&
           <Link to="/projects/new">
-          <Button>
-          Get Started
-        </Button>
-      </Link>
-      }
-      {!props.buttonVisible && <TextForm/>}
+            <Button>
+            Get Started
+          </Button>
+        </Link>
+        }
+        {!props.buttonVisible && <TextForm/>}
       </header>
     </div>
 )
