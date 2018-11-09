@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
+import {Form} from 'reactstrap'
 import { addProject } from '../Actions/index.js';
 import { toneAnalyzer } from '../tone.js';
 
-class TextForm extends Component {
+// ToDo: TextForm needs to generate image and title when TextForm is submitted
+import { imageMapper } from '../imageMapper.js'
+import { titleGenerator } from '../titleGenerator.js'
 
+
+class TextForm extends Component {
   constructor() {
     super();
 
@@ -37,7 +43,7 @@ class TextForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    const { addProject, history } = this.props;
+    const { addProject } = this.props;
     this.redirect(this.state)
   }
 
@@ -49,13 +55,13 @@ class TextForm extends Component {
 
   render(){
     return (
-      <form style={{ marginTop: '16px' }} onSubmit={this.handleOnSubmit} >
+      <Form style={{ marginTop: '16px' }} onSubmit={this.handleOnSubmit} >
         <textarea name="text" cols="40" rows="5"
           onChange={this.handleOnChange}
           placeholder="Paste text here">
-        </textarea>
+        </textarea><br/>
         <input type="submit" value="Submit" />
-      </form>
+      </Form>
     );
   }
 }
@@ -73,4 +79,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TextForm)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TextForm))
