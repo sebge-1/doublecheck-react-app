@@ -4,6 +4,7 @@ import TextForm from '../Containers/TextForm.js'
 import { FaCheckDouble } from 'react-icons/fa'
 import {Button} from 'reactstrap'
 import SubmitButton from './SubmitButton'
+import { titleGenerator } from '../titleGenerator.js'
 
 const Home = props => (
     <div className="App">
@@ -23,7 +24,7 @@ const Home = props => (
         {props.buttonVisible &&
           <SubmitButton/>
         }
-        {!props.buttonVisible && <TextForm/>}
+        {!props.buttonVisible && <TextForm defaultTitle={titleGenerator()}/>}
       </header>
     </div>
 )
