@@ -1,29 +1,26 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
-import {Form} from 'reactstrap'
+import {Form, FormGroup, Input, Label, Button} from 'reactstrap'
 import { addProject } from '../Actions/index.js';
 import { toneAnalyzer } from '../tone.js';
-
-// ToDo: TextForm needs to generate image and title when TextForm is submitted
 import { imageMapper } from '../imageMapper.js'
-import { titleGenerator } from '../titleGenerator.js'
-
 
 class TextForm extends Component {
   constructor() {
     super();
 
     this.state = {
+        title: "",
         text: "",
-        sentences: [],
-        tones: []
       }
     }
 
   updateProject(result) {
     this.setState(
-      Object.assign({}, {text: this.state.text}, {
+      Object.assign({}, {text: this.state.text, title: this.state.title}, {
+        title: this.state.title || this.props.defaultTitle,
+        img: imageMapper(),
         tones: result.document_tone.tones,
         sentences: result.sentences_tone
       })
@@ -49,18 +46,23 @@ class TextForm extends Component {
 
   handleOnChange = event => {
     this.setState({
-      text: event.target.value
+      [event.target.name]: event.target.value
     });
   }
 
-  render(){
+  render() {
     return (
       <Form style={{ marginTop: '16px' }} onSubmit={this.handleOnSubmit} >
-        <textarea name="text" cols="40" rows="5"
-          onChange={this.handleOnChange}
-          placeholder="Paste text here">
-        </textarea><br/>
-        <input type="submit" value="Submit" />
+        <FormGroup>
+          <Input type="title" name="title" placeholder={this.props.defaultTitle} onChange={this.handleOnChange}/>
+        </FormGroup>
+        <FormGroup>
+          <Input type="textarea" name="text" cols="40" rows="5"
+            onChange={this.handleOnChange}
+            placeholder="Paste text here">
+          </Input><br/>
+      </FormGroup>
+          <Button type="submit" value="Submit">Submit</Button>
       </Form>
     );
   }
