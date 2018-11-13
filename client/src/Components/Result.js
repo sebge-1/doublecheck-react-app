@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 import Emoji from './Emoji.js'
 import { symbolMap } from '../emojis.js';
-import { Card, CardImg, CardText, CardFooter, CardImgOverlay, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardFooter, CardImgOverlay,  Popover, PopoverHeader, PopoverBody, Button } from 'reactstrap';
 import '../stylesheets/Result.css'
 
 export default class Result extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      popoverOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      popoverOpen: !this.state.popoverOpen
+    });
+  }
+
   render() {
     return(
       <div className="App-header">
@@ -16,10 +31,30 @@ export default class Result extends Component {
                     <h3>Your Passage</h3>
                     <hr/>
                     <h4>{this.props.project.text}</h4>
-                    <Button className="analysisButton">
+                    <Button className="analysisButton" id="Popover1" onClick={this.toggle}>
                       View Detailed Analysis
                     </Button>
-                 </CardText>
+
+                    <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
+                      {this.props.project.sentences.map(sentence =>
+                        <>
+                        <PopoverHeader>{sentence.text}</PopoverHeader>
+
+                        <PopoverBody>
+                          <ul>{sentence.tones.map(tone =>
+                            <li>
+                              <em>{tone.tone_name}</em>
+                              <p>Score: {tone.score}</p>
+                            </li>
+                            )}
+                          </ul>
+                        </PopoverBody>
+                      </>
+                      )}
+
+                    </Popover>
+
+               </CardText>
              </CardImgOverlay>
              <CardFooter>
                <div className="summary">
