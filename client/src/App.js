@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import {Switch, BrowserRouter as Router, Route
 } from 'react-router-dom';
-import TextForm from './Containers/TextForm.js'
 import Home from './Components/Home.js'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
 import ResultsContainer from './Containers/ResultsContainer.js'
 import { fetchProjects } from './Actions/index.js'
 import { connect } from "react-redux";                                                                                                                  
-import './App.css';
+import './stylesheets/App.css';
 
 class App extends Component {
   componentDidMount() {
