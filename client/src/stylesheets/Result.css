@@ -1,0 +1,62 @@
+.cardImage {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  opacity: 0.33;
+}
+
+
+.cardTitle {
+  margin: 30px;
+  font-family: 'Vidaloka';
+  color: white;
+}
+
+ul {
+   display: inline-block;
+  list-style-type: none;
+   text-align: initial;
+}
+
+li {
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.text {
+  font-weight: bold;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  align: center;
+  top: 12.5%;
+  color: black;
+}
+
+
+.summary {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  align: center;
+  top: 12.5%;
+  color: black;
+}
+
+.card {
+  max-height: 40%;
+  max-width: 50%;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Vidaloka';
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  width: 70%;
+}
+.analysisButton {
+  margin-top: 5%;
+}
