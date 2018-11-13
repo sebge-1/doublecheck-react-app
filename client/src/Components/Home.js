@@ -1,8 +1,6 @@
-import React, { Component} from 'react';
-import {Link, Route, BrowserRouter as Router} from 'react-router-dom';
+import React from 'react';
 import TextForm from '../Containers/TextForm.js'
 import { FaCheckDouble } from 'react-icons/fa'
-import {Button} from 'reactstrap'
 import SubmitButton from './SubmitButton'
 import { titleGenerator } from '../titleGenerator.js'
 
