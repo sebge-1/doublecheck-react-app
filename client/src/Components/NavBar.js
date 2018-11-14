@@ -1,23 +1,28 @@
 import React from 'react';
+import '../stylesheets/NavBar.css'
 import { NavLink } from 'react-router-dom';
 
 const NavBar = props => {
   return (
-    <div style={{ borderBottom: '2px solid black', paddingBottom: '10px', marginBottom: '12px' }}>
+    <div className='nav-bar'>
       <NavLink
-        style={{ marginRight: '10px' }}
+        className='link'
         to="/"
       >
         Home
       </NavLink>
+
+      <div class="vl"></div>
       <NavLink
-        style={{ marginRight: '10px' }}
+        className='link'
         to="/projects/new"
       >
         Start a new project
       </NavLink>
+
+      <div class="vl"></div>
       <NavLink
-        style={{ marginRight: '10px' }}
+        className='link'
         to="/projects"
       >
         My Projects
