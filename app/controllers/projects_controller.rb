@@ -1,14 +1,26 @@
 class ProjectsController < ApplicationController
   def index
-    render json: Project.all, include:['document', 'document.document_tones', 'document.sentences', 'document.sentences.sentence_tones']
+    @projects = Project.all
+    render json: @projects, include: ['tones', 'sentences', 'sentences.tones']
   end
 
   def create
-    project = Project.create(project_params)
-    render json: project, status: 201
+    project = Project.create({text: params[:text], title: params[:title], img: params[:img]})
+    params[:sentences].each do |sent|
+      sentence = project.sentences.create({text: sent["text"]})
+      sent["tones"].each do |tone|
+        sentence.tones.create({score: tone["score"], tone_name: tone["tone_name"]})
+      end
+    end
+
+    params[:tones].each do |tone|
+      project.tones.create({score: tone["score"], tone_name: tone["tone_name"]})
+    end
+    render json: project, include:['project.tones', 'project.sentences'], status: 201
   end
 
+  private
   def project_params
-    params.permit(:id, :text, :result)
+    params.permit(:text, :title, :img, sentences_attributes: [:id, :text, tones_attributes: [:score, :tone_name]], tones_attributes: [:id, :score, :tone_name])
   end
 end
