@@ -1,0 +1,11 @@
+.list {
+  text-align: center;
+}
+
+.list-item {
+  display:inline-block;
+}
+
+.subheading {
+  text-align: left;
+}
