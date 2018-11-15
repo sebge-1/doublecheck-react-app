@@ -15,10 +15,10 @@ gem 'puma', '~> 3.11'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'active_model_serializers', '0.10.6'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'foreman', '~> 0.82.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
