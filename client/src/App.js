@@ -4,7 +4,7 @@ import {Switch, BrowserRouter as Router, Route
 import Home from './Components/Home.js'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
 import ResultsContainer from './Containers/ResultsContainer.js'
-import DetailsContainer from './Components/DetailsContainer.js'
+import DetailsContainer from './Containers/DetailsContainer.js'
 import { fetchProjects } from './Actions/index.js'
 import { connect } from "react-redux";
 import NavBar from './Components/NavBar.js'                                                                                                              
