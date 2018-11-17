@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap'
+import {Form, FormGroup, Input, Button} from 'reactstrap'
 import { addProject } from '../Actions/index.js';
 import { toneAnalyzer } from '../tone.js';
 import { imageMapper } from '../imageMapper.js'
