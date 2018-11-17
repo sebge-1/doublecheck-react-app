@@ -12,7 +12,7 @@ const NavBar = props => {
         Home
       </NavLink>
 
-      <div class="vl"></div>
+      <div className="vl"></div>
       <NavLink
         className='link'
         to="/projects/new"
@@ -20,7 +20,7 @@ const NavBar = props => {
         Start a new project
       </NavLink>
 
-      <div class="vl"></div>
+      <div className="vl"></div>
       <NavLink
         className='link'
         to="/projects"
