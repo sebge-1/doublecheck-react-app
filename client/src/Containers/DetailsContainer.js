@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import { Button } from 'reactstrap';
-import ShowPage from './ShowPage.js'
+import ShowPage from '../Components/ShowPage.js'
 import {connect} from 'react-redux'
 import '../stylesheets/ModalButton.css'
 import { fetchProjects } from '../Actions/index.js'

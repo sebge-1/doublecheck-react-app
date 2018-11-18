@@ -35,7 +35,6 @@ class TextForm extends Component {
     // wait until project is updated and added to Redux store before redirecting
     let action = await toneAnalyzer(project).then(result => this.updateProject(result)).then(project => this.props.addProject(project))
     this.props.history.push(`/projects/${action.project.idx}/result`)
-    console.log(project)
   }
 
   handleOnSubmit = event => {
