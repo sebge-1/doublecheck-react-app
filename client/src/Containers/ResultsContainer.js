@@ -2,10 +2,11 @@ import React, { Component }  from 'react';
 import { Button } from 'reactstrap';
 import Result from '../Components/Result.js';
 import { connect } from 'react-redux';
+import { fetchProjects } from '../Actions/index.js'
 
 class ResultsContainer extends Component {
   saveProject = () => {
-    const { history } = this.props;
+    const { history, fetchProjects } = this.props;
     fetch('/api/save', {
       method: 'POST', // or 'PUT'
       body: JSON.stringify(this.props.project), // data can be `string` or {object}!
@@ -14,12 +15,9 @@ class ResultsContainer extends Component {
       }
     }).then(function(response) {
         if(response.ok) {
-          history.push("/projects")
-        }
-    // (res => res.json())
-    // .then(response => console.log('Success:', JSON.stringify(response)))
-    // .catch(error => console.error('Error:', error));
-    })
+          fetchProjects();
+          history.push("/projects");
+        }}).catch(error => console.error('Error:', error));
   }
 
   render() {
@@ -46,4 +44,9 @@ class ResultsContainer extends Component {
         return { project: {} }
       }
   }
-export default connect(mapStateToProps)(ResultsContainer);
+
+   const mapDispatchToProps = dispatch => ({
+    fetchProjects: () => dispatch(fetchProjects())
+  })
+
+export default connect(mapStateToProps, mapDispatchToProps)(ResultsContainer);
