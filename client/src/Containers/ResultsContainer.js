@@ -6,22 +6,17 @@ import { fetchProjects } from '../Actions/index.js'
 
 class ResultsContainer extends Component {
   saveProject = () => {
-    const { history, fetchProjects } = this.props;
+      const { history, project } = this.props;
     fetch('/api/save', {
       method: 'POST', // or 'PUT'
-      body: JSON.stringify(this.props.project), // data can be `string` or {object}!
+      body: JSON.stringify(project), // data can be `string` or {object}!
       headers:{
         'Content-Type': 'application/json'
       }
-    }).then(function(response) {
-        if(response.ok) {
-          fetchProjects();
-          history.push("/projects");
-        }}).catch(error => console.error('Error:', error));
+    }).then((res) => res.json()).then((data) =>  {this.props.project.id = data.project.id}).then((id) => history.push("/projects")).catch(error => console.error('Error:', error));
   }
 
   render() {
-
     return (
       <div>
         <Result project={this.props.project} />
@@ -35,18 +30,17 @@ class ResultsContainer extends Component {
     }
   }
 
-  const mapStateToProps = (state, ownProps) => {
-    const project = state.projects.find(project => project.idx === +ownProps.match.params.projectId)
-
-      if (project) {
-        return { project }
-      } else {
-        return { project: {} }
-      }
+const mapStateToProps = (state, ownProps) => {
+  const project = state.projects.find(project => project.idx === +ownProps.match.params.projectId)
+    if (project) {
+      return { project }
+    } else {
+      return { project: {} }
+    }
   }
 
-   const mapDispatchToProps = dispatch => ({
-    fetchProjects: () => dispatch(fetchProjects())
-  })
+const mapDispatchToProps = dispatch => ({
+  fetchProjects: () => dispatch(fetchProjects())
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(ResultsContainer);
