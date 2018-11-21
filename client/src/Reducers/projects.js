@@ -3,8 +3,10 @@ export default (state = [], action) => {
     case 'ADD_PROJECT':
       return [ ...state, action.project ];
     case 'FETCH_PROJECTS':
-      return state.concat(action.payload);
-    default: // need this or default case
+      return action.payload;
+    case 'DELETE_PROJECT':
+      return state.filter(project => project.id !== action.payload)
+    default:
       return state;
     }
 }
