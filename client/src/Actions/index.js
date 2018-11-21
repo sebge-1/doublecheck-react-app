@@ -15,3 +15,13 @@ export function fetchProjects() {
     .then(projects => dispatch({type: "FETCH_PROJECTS", payload: projects}))
   }
 }
+
+export function deleteData(project) {
+  return (dispatch) => {
+    return fetch(`/api/projects/${project.id}`, {
+      method: 'delete'
+    })
+  .then(response => response.json())
+  .then(data => dispatch({type: "DELETE_PROJECT", payload: data.project.id}))
+  }
+}
