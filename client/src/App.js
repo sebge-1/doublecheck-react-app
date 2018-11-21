@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Switch, BrowserRouter as Router, Route
 } from 'react-router-dom';
 import Home from './Components/Home.js'
-import ProjectCards from './Components/ProjectCards.js'
+import ProjectsContainer from './Containers/ProjectsContainer.js'
 import ResultsContainer from './Containers/ResultsContainer.js'
 import DetailsContainer from './Containers/DetailsContainer.js'
 import { fetchProjects } from './Actions/index.js'
@@ -24,7 +24,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' render={(props) => <Home {...props} buttonVisible={true} />}/>
             <Route exact path='/projects/new' render={(props) => (<div><Home {...props} buttonVisible={false}/></div>)}/>
-            <Route exact path='/projects' render={(props) => <ProjectCards {...props} projects={this.props.projectList} />} />
+            <Route exact path='/projects' component={ProjectsContainer} />
             <Route exact path='/projects/:id' render={(props) => <DetailsContainer {...props} projects={this.props.projectList} /> }/>
             <Route exact path='/projects/:projectId/result' component={ResultsContainer} />
           </Switch>
