@@ -16,7 +16,13 @@ class ProjectsController < ApplicationController
     params[:tones].each do |tone|
       project.tones.create({score: tone["score"], tone_name: tone["tone_name"]})
     end
-    render json: project, include:['project.tones', 'project.sentences'], status: 201
+    render json: {status: 201, project: project}
+  end
+
+  def delete
+    project = Project.find(params[:id])
+    render json: {project: project}
+    project.destroy
   end
 
   private
