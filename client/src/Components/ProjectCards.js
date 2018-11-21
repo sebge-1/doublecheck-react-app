@@ -1,10 +1,9 @@
-import React from 'react';
+import React from 'react'
 import {CardDeck, Card, CardTitle, CardImg, CardBody, CardText } from 'reactstrap';
-import {Route, Link} from 'react-router-dom'
-import Result from './Result.js'
-import { connect } from 'react-redux';
+import {Route, Link} from 'react-router-dom';
+import {FaTrash} from 'react-icons/fa';
 
-const ProjectCards = (props) => (
+const ProjectCards = props => (
   <>
     <CardDeck>
       {props.projects.map(project => (
@@ -18,6 +17,9 @@ const ProjectCards = (props) => (
               See Details
             </Link>
           </div>
+          <div>
+            <FaTrash onClick={() => props.delete(project)} />
+          </div>
           </CardBody>
        </Card>
       )
@@ -25,5 +27,7 @@ const ProjectCards = (props) => (
    </CardDeck>
 </>
 )
+
+
 
 export default ProjectCards
