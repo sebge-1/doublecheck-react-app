@@ -25,7 +25,7 @@ class App extends Component {
             <Route exact path='/' render={(props) => <Home {...props} buttonVisible={true} />}/>
             <Route exact path='/projects/new' render={(props) => (<div><Home {...props} buttonVisible={false}/></div>)}/>
             <Route exact path='/projects' component={ProjectsContainer} />
-            <Route exact path='/projects/:id' render={(props) => <DetailsContainer {...props} projects={this.props.projectList} /> }/>
+            <Route exact path='/projects/:id' component={DetailsContainer}/>
             <Route exact path='/projects/:projectId/result' component={ResultsContainer} />
           </Switch>
         </div>
