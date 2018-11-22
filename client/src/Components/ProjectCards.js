@@ -1,13 +1,13 @@
 import React from 'react'
-import {CardDeck, Card, CardTitle, CardImg, CardBody, CardText } from 'reactstrap';
-import {Route, Link} from 'react-router-dom';
+import {CardDeck, Card, CardTitle, CardImg, CardBody, CardText, Button } from 'reactstrap';
+import {Link} from 'react-router-dom';
 import {FaTrash} from 'react-icons/fa';
 
 const ProjectCards = props => (
   <>
     <CardDeck>
       {props.projects.map(project => (
-        <Card>
+        <Card key={project.id}>
           <CardImg top width="80%" src={require("../images/" + project.img)} alt="Card image cap" />
           <CardBody>
             <CardTitle className="text-center text-muted"><em>{project.title}</em></CardTitle>
@@ -17,9 +17,9 @@ const ProjectCards = props => (
               See Details
             </Link>
           </div>
-          <div>
-            <FaTrash onClick={() => props.delete(project)} />
-          </div>
+          <Button style={{backgroundColor: 'white', border: 'none'}}>
+            <FaTrash onClick={() => props.delete(project)} style={{color: 'black'}} />
+          </Button>
           </CardBody>
        </Card>
       )

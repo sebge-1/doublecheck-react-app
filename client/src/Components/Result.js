@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Emoji from './Emoji.js'
 import { symbolMap } from '../emojis.js';
-import { Card, CardImg, CardText, CardFooter, CardImgOverlay,  Popover, PopoverHeader, PopoverBody, Button } from 'reactstrap';
+import { Card, CardImg, CardFooter, CardImgOverlay,  Popover, PopoverHeader, PopoverBody, Button } from 'reactstrap';
 import '../stylesheets/Result.css'
-import {connect} from 'react-redux'
 
 class Result extends Component {
   constructor(props) {
@@ -23,59 +22,57 @@ class Result extends Component {
   }
 
   render() {
-    console.log(this.state.project)
     return(
       <div className="App-header">
-                <h2 className='cardTitle'><em>{this.props.project.title}</em></h2>
-               <Card body inverse className="card text-center">
-                 <CardImg className="cardImage" src={require("../images/" + this.props.project.img)} alt="Card image cap" />
-                 <CardImgOverlay>
-                      <CardText className="text">
-                         <h3>Your Passage</h3>
-                         <hr/>
-                         <h4>{this.props.project.text}</h4>
-                      <Button className="analysisButton" id="Popover1" onClick={this.toggle}>
-                           View Detailed Analysis
-                         </Button>
+        <h2 className='cardTitle'><em>{this.props.project.title}</em></h2>
+          <Card body inverse className="card text-center">
+            <CardImg className="cardImage" src={require("../images/" + this.props.project.img)} alt="Card image cap" />
+            <CardImgOverlay>
+            <div className="text">
+            <h3>Your Passage</h3>
+              <hr/>
+            <h4>{this.props.project.text}</h4>
 
-                        <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
-                         {this.props.project.sentences.map(sentence =>
-                          <>
-                          <PopoverHeader>{sentence.text}</PopoverHeader>
+            <Button className="analysisButton" id="Popover1" onClick={this.toggle}>
+              View Detailed Analysis
+            </Button>
 
-                           <PopoverBody>
-                             <ul>{sentence.tones.map(tone =>
-                                <li>
-                                    <em>{tone.tone_name}</em>
-                                    <Emoji symbol={symbolMap(tone)} />
-                                 <p>Score: {tone.score}</p>
-                              </li>
-                             )}
-                           </ul>
-                             </PopoverBody>
-                        </>
-                         )}
+            <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
 
-                       </Popover>
-
-                  </CardText>
-                </CardImgOverlay>
-                 <CardFooter>
-                   <div className="summary">
-                   <h3>Summary</h3>
-                    <hr/>
-                  <ul>
-                    {this.props.project.tones.map(tone =>
-                       <li>
-                        <em>{tone.tone_name} </em>
-                       <Emoji symbol={symbolMap(tone)} />
-                         <p> Score: {tone.score}</p>
-                       </li>)}
-                     </ul>
-                   </div>
-                 </CardFooter>
-               </Card>
+            {this.props.project.sentences.map((sentence, index) =>
+              <div key={index}>
+                <PopoverHeader>{sentence.text}</PopoverHeader>
+                  <PopoverBody>
+                    <ul key={index}>{sentence.tones.map((tone, index) =>
+                      <li key={index}>
+                        <em>{tone.tone_name}</em>
+                        <Emoji symbol={symbolMap(tone)} />
+                        <p>Score: {tone.score}</p>
+                      </li>
+                      )}
+                    </ul>
+                  </PopoverBody>
+                </div>
+              )}
+              </Popover>
             </div>
+          </CardImgOverlay>
+          <CardFooter>
+           <div className="summary">
+              <h3>Summary</h3>
+                <hr/>
+              <ul>
+              {this.props.project.tones.map((tone, index) =>
+                <li key={index}>
+                  <em>{tone.tone_name} </em>
+                  <Emoji symbol={symbolMap(tone)} />
+                  <p> Score: {tone.score}</p>
+                </li>)}
+              </ul>
+            </div>
+          </CardFooter>
+        </Card>
+      </div>
      )
    }
 }
