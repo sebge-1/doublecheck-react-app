@@ -17,23 +17,18 @@ class TextForm extends Component {
     }
 
   updateProject(result) {
-    this.setState(
-      Object.assign({}, {text: this.state.text, title: this.state.title}, {
-        title: this.state.title || this.props.defaultTitle,
-        img: imageMapper(),
-        tones: result.document_tone.tones,
-        sentences: result.sentences_tone
-      })
-    );
-    return new Promise(
-      (resolve,reject) => {
-      resolve(this.state)
-    })
+    let updatedProject = Object.assign({}, {text: this.state.text, title: this.state.title}, {
+      title: this.state.title || this.props.defaultTitle,
+      img: imageMapper(),
+      tones: result.document_tone.tones,
+      sentences: result.sentences_tone
+    });
+    return this.props.addProject(updatedProject)
   }
 
   async redirect(project) {
     // wait until project is updated and added to Redux store before redirecting
-    let action = await toneAnalyzer(project).then(result => this.updateProject(result)).then(project => this.props.addProject(project))
+    let action = await toneAnalyzer(project).then(result => this.updateProject(result))
     this.props.history.push(`/projects/${action.project.idx}/result`)
   }
 
