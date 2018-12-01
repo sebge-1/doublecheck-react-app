@@ -1,13 +1,18 @@
 import React, {Component} from 'react'
 import Result from '../Components/Result.js'
 import {connect} from 'react-redux'
+import { fetchProjects } from '../Actions/index.js'
 import '../stylesheets/ModalButton.css'
 
 class DetailsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchProjects();
+  }
+
   render() {
     return (
       <>
-        <Result project={this.props.selectedProject}/>
+        {this.props.selectedProject && <Result project={this.props.selectedProject}/>}
       </>
     )
   }
@@ -20,4 +25,9 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps)(DetailsContainer)
+
+const mapDispatchToProps = dispatch => ({
+  fetchProjects: () => dispatch(fetchProjects())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(DetailsContainer)
