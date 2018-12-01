@@ -34,7 +34,6 @@ class TextForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    const { addProject } = this.props;
     this.redirect(this.state)
   }
 
