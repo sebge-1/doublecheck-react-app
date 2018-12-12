@@ -73,3 +73,839 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:42:46 -0500
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:42:46 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sebastiangertz/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+  ↳ /Users/sebastiangertz/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddTitleToProjects (20181113203107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "projects" ADD "title" varchar[0m
+  ↳ db/migrate/20181113203107_add_title_to_projects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181113203107"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddImgToProjects (20181113203119)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "projects" ADD "img" varchar[0m
+  ↳ db/migrate/20181113203119_add_img_to_projects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181113203119"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:43:46 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sebastiangertz/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (2.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.6ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.1ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (1.8ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (123.28ms)
+Completed 200 OK in 300ms (Views: 252.2ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2018-12-12 18:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2018-12-12 18:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2018-12-12 18:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2018-12-12 18:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2018-12-12 18:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:43:58 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (2.0ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (126.03ms)
+Completed 200 OK in 134ms (Views: 124.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:44:08 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.9ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.6ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (4.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (171.3ms)
+Completed 200 OK in 175ms (Views: 163.2ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/api/save" for 127.0.0.1 at 2018-12-12 18:44:33 -0500
+Processing by ProjectsController#create as JSON
+  Parameters: {"text"=>"Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. ", "title"=>"ethnicallyHollowStar", "img"=>"rawpixel-989788-unsplash.jpg", "tones"=>[{"score"=>0.609127, "tone_id"=>"joy", "tone_name"=>"Joy"}, {"score"=>0.583105, "tone_id"=>"confident", "tone_name"=>"Confident"}, {"score"=>0.702483, "tone_id"=>"analytical", "tone_name"=>"Analytical"}], "sentences"=>[{"sentence_id"=>0, "text"=>"Two things that I value greatly are creativity and the ability to figure out how things work.", "tones"=>[{"score"=>0.743104, "tone_id"=>"analytical", "tone_name"=>"Analytical"}]}, {"sentence_id"=>1, "text"=>"Programming satisfies both of these criteria and that is the foundation of my passion for it.", "tones"=>[{"score"=>0.639336, "tone_id"=>"joy", "tone_name"=>"Joy"}, {"score"=>0.506763, "tone_id"=>"analytical", "tone_name"=>"Analytical"}]}, {"sentence_id"=>2, "text"=>"After years of working in the legal field, I wanted to make the transition to a tech-based career.", "tones"=>[]}], "idx"=>1, "project"=>{"text"=>"Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. ", "title"=>"ethnicallyHollowStar", "img"=>"rawpixel-989788-unsplash.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mProject Create (2.9ms)[0m  [1m[32mINSERT INTO "projects" ("text", "created_at", "updated_at", "title", "img") VALUES (?, ?, ?, ?, ?)[0m  [["text", "Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. "], ["created_at", "2018-12-12 23:44:33.757819"], ["updated_at", "2018-12-12 23:44:33.757819"], ["title", "ethnicallyHollowStar"], ["img", "rawpixel-989788-unsplash.jpg"]]
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "Two things that I value greatly are creativity and the ability to figure out how things work."], ["project_id", 17]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (1.1ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.743104], ["tone_name", "Analytical"], ["analyzable_id", 28], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (1.0ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "Programming satisfies both of these criteria and that is the foundation of my passion for it."], ["project_id", 17]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (2.8ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.639336], ["tone_name", "Joy"], ["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.506763], ["tone_name", "Analytical"], ["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "After years of working in the legal field, I wanted to make the transition to a tech-based career."], ["project_id", 17]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.3ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.609127], ["tone_name", "Joy"], ["analyzable_id", 17], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.583105], ["tone_name", "Confident"], ["analyzable_id", 17], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.702483], ["tone_name", "Analytical"], ["analyzable_id", 17], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.76ms)
+Completed 200 OK in 133ms (Views: 24.3ms | ActiveRecord: 36.2ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:45:10 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.5ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 17]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.7ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 28], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 30], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (107.22ms)
+Completed 200 OK in 111ms (Views: 103.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:45:50 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (15.6ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 17]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.8ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.6ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 28], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 30], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (155.19ms)
+Completed 200 OK in 162ms (Views: 137.9ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:46:59 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.5ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 17]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 28], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 30], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (89.81ms)
+Completed 200 OK in 93ms (Views: 86.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:47:01 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 13], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 14], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 15], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 17]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 16], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 17], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.4ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 19], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 20], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (2.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 21], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 22], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (1.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 23], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 24], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 25], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 26], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (3.7ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 27], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 28], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.6ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 29], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 30], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (175.57ms)
+Completed 200 OK in 185ms (Views: 170.2ms | ActiveRecord: 14.2ms)
+
+
+Started DELETE "/api/projects/14" for 127.0.0.1 at 2018-12-12 18:47:06 -0500
+Processing by ProjectsController#delete as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:23
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.0ms)
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[36mProject Destroy (2.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+Completed 200 OK in 15ms (Views: 2.7ms | ActiveRecord: 5.7ms)
+
+
+Started DELETE "/api/projects/13" for 127.0.0.1 at 2018-12-12 18:47:07 -0500
+Processing by ProjectsController#delete as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:23
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.58ms)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[36mProject Destroy (0.7ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/api/projects/15" for 127.0.0.1 at 2018-12-12 18:47:08 -0500
+Processing by ProjectsController#delete as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:23
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[36mProject Destroy (1.1ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/api/projects/16" for 127.0.0.1 at 2018-12-12 18:47:12 -0500
+Processing by ProjectsController#delete as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:23
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.37ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[36mProject Destroy (0.5ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/projects/17" for 127.0.0.1 at 2018-12-12 18:47:16 -0500
+Processing by ProjectsController#delete as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:23
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[36mProject Destroy (0.5ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/projects_controller.rb:25
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:25
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/save" for 127.0.0.1 at 2018-12-12 18:47:26 -0500
+Processing by ProjectsController#create as JSON
+  Parameters: {"text"=>"Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. ", "title"=>"counterintuitivelyConsciousPopulation", "img"=>"rawpixel-557124-unsplash.jpg", "tones"=>[{"score"=>0.609127, "tone_id"=>"joy", "tone_name"=>"Joy"}, {"score"=>0.702483, "tone_id"=>"analytical", "tone_name"=>"Analytical"}, {"score"=>0.583105, "tone_id"=>"confident", "tone_name"=>"Confident"}], "sentences"=>[{"sentence_id"=>0, "text"=>"Two things that I value greatly are creativity and the ability to figure out how things work.", "tones"=>[{"score"=>0.743104, "tone_id"=>"analytical", "tone_name"=>"Analytical"}]}, {"sentence_id"=>1, "text"=>"Programming satisfies both of these criteria and that is the foundation of my passion for it.", "tones"=>[{"score"=>0.639336, "tone_id"=>"joy", "tone_name"=>"Joy"}, {"score"=>0.506763, "tone_id"=>"analytical", "tone_name"=>"Analytical"}]}, {"sentence_id"=>2, "text"=>"After years of working in the legal field, I wanted to make the transition to a tech-based career.", "tones"=>[]}], "idx"=>1, "project"=>{"text"=>"Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. ", "title"=>"counterintuitivelyConsciousPopulation", "img"=>"rawpixel-557124-unsplash.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("text", "created_at", "updated_at", "title", "img") VALUES (?, ?, ?, ?, ?)[0m  [["text", "Two things that I value greatly are creativity and the ability to figure out how things work. Programming satisfies both of these criteria and that is the foundation of my passion for it. After years of working in the legal field, I wanted to make the transition to a tech-based career. "], ["created_at", "2018-12-12 23:47:26.642510"], ["updated_at", "2018-12-12 23:47:26.642510"], ["title", "counterintuitivelyConsciousPopulation"], ["img", "rawpixel-557124-unsplash.jpg"]]
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "Two things that I value greatly are creativity and the ability to figure out how things work."], ["project_id", 18]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.743104], ["tone_name", "Analytical"], ["analyzable_id", 31], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "Programming satisfies both of these criteria and that is the foundation of my passion for it."], ["project_id", 18]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.639336], ["tone_name", "Joy"], ["analyzable_id", 32], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.506763], ["tone_name", "Analytical"], ["analyzable_id", 32], ["analyzable_type", "Sentence"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "project_id") VALUES (?, ?)[0m  [["text", "After years of working in the legal field, I wanted to make the transition to a tech-based career."], ["project_id", 18]]
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.609127], ["tone_name", "Joy"], ["analyzable_id", 18], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.2ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.702483], ["tone_name", "Analytical"], ["analyzable_id", 18], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mTone Create (1.0ms)[0m  [1m[32mINSERT INTO "tones" ("score", "tone_name", "analyzable_id", "analyzable_type") VALUES (?, ?, ?, ?)[0m  [["score", 0.583105], ["tone_name", "Confident"], ["analyzable_id", 18], ["analyzable_type", "Project"]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.3ms)
+Completed 200 OK in 133ms (Views: 1.9ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2018-12-12 18:47:34 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 18], ["analyzable_type", "Project"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."project_id" = ?[0m  [["project_id", 18]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 31], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.2ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 32], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers]   [1m[36mTone Load (0.3ms)[0m  [1m[34mSELECT "tones".* FROM "tones" WHERE "tones"."analyzable_id" = ? AND "tones"."analyzable_type" = ?[0m  [["analyzable_id", 33], ["analyzable_type", "Sentence"]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.48ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 1.4ms)
+
+
