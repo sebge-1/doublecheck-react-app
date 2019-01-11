@@ -1,21 +1,33 @@
-.cardImage {
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  opacity: 0.33;
+.App-header {
+    overflow: hidden;
 }
 
+.cardImage {
+  max-height: 100vh;
+  max-width: 200%;
+  margin: 0 auto;
+  opacity: 0.33;
+  overflow: hidden;
+}
 
+div.card {
+  min-width: 85%;
+  text-align: center;
+    overflow: hidden;
+}
 .cardTitle {
-  margin: 30px;
+  margin: 15px;
   font-family: 'Vidaloka';
+  font-size: 5vw;
   color: white;
 }
 
 ul {
-   display: inline-block;
+
   list-style-type: none;
-   text-align: initial;
+   /* text-align: center; */
+   width: 90%;
+      margin: auto;
 }
 
 li {
@@ -26,7 +38,7 @@ li {
 .text {
   font-weight: bold;
   position: relative;
-  width: 70%;
+  width: 90%;
   margin: auto;
   align: center;
   top: 12.5%;
@@ -36,11 +48,26 @@ li {
 
 .summary {
   position: relative;
-  width: 70%;
+  width: 90%;
   margin: auto;
   align: center;
   top: 12.5%;
   color: black;
+     content-align: center;
+}
+
+
+.summary > h3 {
+  font-size: 5vw;
+}
+
+.text > h3 {
+  margin-top: -50px;
+  font-size: 5vw;
+}
+
+.text > h4 {
+  font-size: 4vw;
 }
 
 .card {
@@ -59,4 +86,14 @@ hr {
 }
 .analysisButton {
   margin-top: 5%;
+}
+
+.popover-header {
+  font-size: 15px;
+  padding: 5px;
+}
+
+p.card-text {
+  padding-left: 15px;
+  padding-right: 15px;
 }
