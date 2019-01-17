@@ -5,17 +5,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    project = Project.create({text: params[:text], title: params[:title], img: params[:img]})
-    params[:sentences].each do |sent|
-      sentence = project.sentences.create({text: sent["text"]})
-      sent["tones"].each do |tone|
-        sentence.tones.create({score: tone["score"], tone_name: tone["tone_name"]})
-      end
-    end
-
-    params[:tones].each do |tone|
-      project.tones.create({score: tone["score"], tone_name: tone["tone_name"]})
-    end
+    project = Project.create(project_params)
     render json: {status: 201, project: project}
   end
 
@@ -27,6 +17,6 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.permit(:text, :title, :img, sentences_attributes: [:id, :text, tones_attributes: [:score, :tone_name]], tones_attributes: [:id, :score, :tone_name])
+    params.require(:project).permit(:text, :title, :img, sentences_attributes: [:text, :id, tones_attributes: [:score, :tone_name]], tones_attributes: [:score, :tone_name])
   end
 end
