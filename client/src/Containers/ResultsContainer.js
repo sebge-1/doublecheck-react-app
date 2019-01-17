@@ -33,18 +33,16 @@ class ResultsContainer extends Component {
           tones_attributes: project.tones
         }
       }),
+      headers:{
+        'Content-Type': 'application/json'
+      }
     }).then((res) => res.json()).then((data) =>  {this.props.project.id = data.project.id}).then((id) => history.push("/projects")).catch(error => console.error('Error:', error));
   }
 
   render() {
     return (
       <div>
-        <Result project={this.props.project} />
-        <div className="text-center">
-          <Button onClick={this.saveProject} style={{fontFamily: 'Vidaloka'}}>
-            Save Project
-          </Button>
-        </div>
+        <Result project={this.props.project} saveProject={this.saveProject}/>
       </div>
       )
     }
