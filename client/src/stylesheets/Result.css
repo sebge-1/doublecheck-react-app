@@ -1,15 +1,13 @@
 .App-header {
     overflow: hidden;
 }
-
 .cardImage {
-  max-height: 100vh;
-  max-width: 200%;
+  max-height: 100%;
+  max-width: 100%;
   margin: 0 auto;
   opacity: 0.33;
   overflow: hidden;
 }
-
 div.card {
   min-width: 85%;
   text-align: center;
@@ -21,11 +19,8 @@ div.card {
   font-size: 5vw;
   color: white;
 }
-
 ul {
-
   list-style-type: none;
-   /* text-align: center; */
    width: 90%;
       margin: auto;
 }
@@ -34,7 +29,6 @@ li {
   margin: 10px 10px 10px 10px;
   text-align: center;
 }
-
 .text {
   font-weight: bold;
   position: relative;
@@ -44,8 +38,6 @@ li {
   top: 12.5%;
   color: black;
 }
-
-
 .summary {
   position: relative;
   width: 90%;
@@ -53,31 +45,24 @@ li {
   align: center;
   top: 12.5%;
   color: black;
-     content-align: center;
 }
-
-
 .summary > h3 {
   font-size: 5vw;
 }
-
 .text > h3 {
   margin-top: -50px;
   font-size: 5vw;
 }
-
 .text > h4 {
   font-size: 4vw;
 }
-
 .card {
   max-height: 40%;
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
   position: relative;
   font-family: 'Vidaloka';
 }
-
 hr {
   border: 0;
   height: 1px;
@@ -86,14 +71,21 @@ hr {
 }
 .analysisButton {
   margin-top: 5%;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
-
+#buttonText {
+  font-size: 20px;
+  padding: 0px;
+}
 .popover-header {
   font-size: 15px;
   padding: 5px;
 }
-
 p.card-text {
   padding-left: 15px;
   padding-right: 15px;
+}
+img.actions:hover {
+  cursor: pointer;
 }
