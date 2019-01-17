@@ -6,10 +6,33 @@ import { fetchProjects } from '../Actions/index.js'
 
 class ResultsContainer extends Component {
   saveProject = () => {
-      const { history, project } = this.props;
+    const { history, project } = this.props;
     fetch('/api/save', {
-      method: 'POST', // or 'PUT'
-      body: JSON.stringify(project), // data can be `string` or {object}!
+      method: 'POST',
+      body: JSON.stringify({
+        // build well-structured params hash that will match Rails' expectations (sentences/tones must be *_attributes in order to be whitelisted)
+        project: {
+          img: project.img,
+          title: project.title,
+          text: project.text,
+          sentences_attributes: project.sentences.map(
+            sentence => (
+              {
+                "text": sentence.text,
+                tones_attributes: sentence.tones.map(
+                  tone => (
+                    {
+                      tone_name: tone.tone_name,
+                      score: tone.score
+                    }
+                  )
+                )
+              }
+            )
+          ),
+          tones_attributes: project.tones
+        }
+      }),
       headers:{
         'Content-Type': 'application/json'
       }
@@ -19,11 +42,8 @@ class ResultsContainer extends Component {
   render() {
     return (
       <div>
-        <Result project={this.props.project} />
+        <Result project={this.props.project} saveProject={this.saveProject} />
         <div className="text-center">
-          <Button onClick={this.saveProject} style={{fontFamily: 'Vidaloka'}}>
-            Save Project
-          </Button>
         </div>
       </div>
       )
