@@ -23,5 +23,9 @@ button:hover {
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+
+div.project {
+  height: 50%;
 }
