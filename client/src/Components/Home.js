@@ -19,6 +19,7 @@ const Home = props => (
         <p>
           Paste your texts and tweets into DoubleCheck to find out.
         </p>
+        <p>Pro Tip: Use short passages between 2-4 sentences for optimal results</p>
         {props.buttonVisible &&
           <SubmitButton/>
         }
